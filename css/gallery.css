@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+/* header styles  */
+.user-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+.user {
+  text-align: center;
+}
+.user-image-container {
+  max-width: 200px;
+}
+.user-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.user-name {
+  color: #4e5150;
+  font-size: 24px;
+  margin: 8px 0;
+}
+.user-address {
+  color: #a9a9a9;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.user-cards {
+  display: flex;
+  gap: 24px;
+}
+.user-card-item {
+  border-radius: 12px;
+  background: #e5e5e5;
+  padding: 10px 12px;
+  text-align: center;
+  width: 100px;
+}
+.count {
+  color: #4e5150;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.count-text {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+/* gallery section styles  */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.gallery :nth-child(2) {
+  grid-column: span 2;
+}
+
+.gallery :nth-child(3) {
+  grid-column: span 2;
+}
+
+.gallery :nth-child(4) {
+  grid-row: span 2;
+}
+
+.gallery {
+  margin: 50px 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* footer styles  */
+footer p {
+  color: #b9bdcf;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+footer p span {
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+/* Responsive Styles  */
+/* Mobile  */
+@media screen and (max-width: 576px) {
+  .user-cards {
+    gap: 10px;
+  }
+
+  .user-card-item {
+    border-radius: 12px;
+    background: #e5e5e5;
+    padding: 8px 10px;
+    text-align: center;
+    width: 90px;
+  }
+
+  .gallery {
+    margin: 50px 10px;
+  }
+}
+
+/* Tablet or Medium Screen  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .gallery {
+    margin: 50px 20px;
+  }
+}
+
+/* Large Devices  */
+@media screen and (min-width:768px) and (max-width:992px){
+    .gallery {
+        margin: 50px 40px;
+      }
+}
